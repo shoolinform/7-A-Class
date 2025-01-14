@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-A Class</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <button type="button" onclick="submitForm()">Відправити</button>
+      </form>
+      
+      <script>
+        function submitForm() {
+          const name = document.getElementById('name').value;
+          const birthday = document.getElementById('birthday').value;
+      
+          showAlert(name, birthday);
+        }
+      
+        function showAlert(name, birthday) {
+          alert(`Привіт, ${name}! Твій день народження: ${birthday}`);
+        }
+      </script>  
+</body>
+</html>
